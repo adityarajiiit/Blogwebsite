@@ -1,0 +1,216 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+html {
+    height: 100%;
+    width: 100%;
+
+   background-color: #233831;
+
+
+
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+
+    padding: 5px;
+    justify-content: center;
+
+
+
+}
+
+.flexbox {
+
+position: fixed;
+margin-top: 70px;
+    display: flex;
+    list-style: none;
+
+    gap: 5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left:1.25rem ;
+    padding-right: 1.25rem;
+    border:none;
+    border-radius: 50px;
+    backdrop-filter: blur(50px) saturate(1.7);
+    background:hsla(175, 23%, 18%, .7);
+
+
+
+}
+
+.button {
+    color: #D4EDE4;
+    text-decoration: none;
+
+    font-family: -apple-system, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    border: none;
+    padding: 8px 20px ;
+    margin: 0 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.active {
+    border-radius: 25px;
+    background-color: hsla(160, 52%, 71%, .1);
+}
+h1 {
+    text-align: center;
+    font-size: 7.5rem;
+    line-height: 100%;
+    letter-spacing: -2px;
+    font-family: 'Dosis', sans-serif;
+    color: hsla(160, 52%, 71%, 1);
+    margin-top: 140px;
+
+}
+
+img {
+    width: 80px;
+    height: 80px;
+
+}
+#pehla {
+    position: absolute;
+    top: 140px;
+    left: 71%;
+}
+#dusra {
+    position: absolute;
+    top: 340px;
+    left: 23%;
+}
+img {
+    animation: fadeIn 6s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes titleAnimation {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: titleAnimation 0.5s;
+}
+p {
+    text-align: center;
+    font-size: 24px;
+    color: #D4EDE4;
+    font-family: 'Acorn Caravan', sans-serif;
+    animation: titleAnimation 2s;
+
+}
+.profile {
+    display: grid;
+
+    margin: 0 auto;
+    width: 100%;
+    grid-template-columns: repeat(25,1fr);
+}
+
+html {
+    height: 100%;
+    width: 100%;
+
+}
+.profile img {
+    border-radius: 50%;
+
+}
+
+.top {
+
+    animation: titleAnimation 2s;
+
+
+}
+
+.profile img {
+    width: 320px;
+    height: 320px;
+
+
+    top: 40rem;
+    left: 8rem;
+}
+#cc {
+    font-size: clamp(1.875rem, 1.301rem + 2.449vw, 3.95rem);
+    color: #8FDCC2;
+    font-family: 'Dosis', sans-serif;
+}
+#dd {
+    font-family: 'Acorn Caravan', sans-serif;
+    font-size: clamp(1rem, .8852rem + .4898vw, 1.375rem);
+}
+.cc, .dd {
+    text-align: center;
+    grid-column-start: 12;
+    grid-column-end: 24;
+
+
+}
+.battle {
+    grid-column-start: 12;
+    grid-column-end: 24;
+    margin-top: 1.5rem;
+}
+a {
+    text-decoration: none;
+    color:  #D4EDE4;
+}
+@media only screen and (max-width: 768px) {
+
+
+    html {
+        font-size: 16px;
+    }
+
+    .flexbox {
+        padding: 0.25rem;
+        border-radius: 30px;
+    }
+
+    h1 {
+        font-size: 5rem;
+        margin-top: 80px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .profile img {
+        width: 200px;
+        height: 200px;
+        top: 20rem;
+        left: 4rem;
+    }
+
+    #cc, #dd {
+        grid-column-start: 8;
+        grid-column-end: 20;
+    }
+}
