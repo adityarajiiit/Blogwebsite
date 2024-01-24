@@ -12,13 +12,13 @@ app.use(bodyParser.urlencoded({extended:true}));
 //    res.render("D:\\Web development\\Blog website\\index.ejs");
 // });
 app.get("/",(req,res)=> {
-res.render("D:\\Web development\\Blog website\\index.ejs")
+res.render("index.ejs")
 });
 app.get("/create",(req,res)=> {
-    res.render("D:\\Web development\\Blog website\\create.ejs");
+    res.render("create.ejs");
 });
 app.get("/view",(req,res)=> {
-    res.render("D:\\Web development\\Blog website\\view.ejs",{
+    res.render("view.ejs",{
         name:req.body.name,
         birth:req.body.birth,
         email:req.body.email,
@@ -50,7 +50,7 @@ app.post("/view",(req,res)=> {
 // });
 app.post("/view",(req,res)=> {
     console.log(req.body);
-    res.render("D:\\Web development\\Blog website\\view.ejs",{
+    res.render("view.ejs",{
         name:req.body.name,
         birth:req.body.birth,
         email:req.body.email,
