@@ -29,7 +29,7 @@ app.get("/view",(req,res)=> {
 
 app.post("/view",(req,res)=> {
    console.log(req.body);
-    res.render("D:\\Web development\\Blog website\\view.ejs",{
+    res.render("view.ejs",{
         name:req.body.name,
         birth:req.body.birth,
         email:req.body.email,
